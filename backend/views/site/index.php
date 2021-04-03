@@ -2,50 +2,52 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+use yii\helpers\BaseHtml;
+
+$this->title = 'My Yii Application!!!!!';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations!!!!!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="/journal/index">Записати показання</a></p>
     </div>
 
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-center">ПАТ "Запоріжжяоблєнерго"</h5>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p class="text-center"><?= BaseHtml::img("/img/zoe.png", ['style' => 'height: 64px']) ?></p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p class="text-center"><a class="btn btn-danger" href="https://www.zoe.com.ua/" target="_blank">Сайт ПАТ "ЗОЕ" &raquo;</a>
+                </p>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-center">АТ "Запоріжгаз"</h5>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p class="text-center"><?= BaseHtml::img("/img/zgaz.jpg", ['style' => 'height: 64px']) ?></p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p class="text-center"><a class="btn btn-danger" href="https://104.ua/" target="_blank">Сайт "Запоріжгаз" &raquo;</a></p>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-center">КП "Водоканал"</h5>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p class="text-center"><?= BaseHtml::img("/img/voda.png", ['style' => 'height: 64px']) ?></p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p class="text-center"><a class="btn btn-danger" href="http://www.vodokanal.zp.ua/" target="_blank">Сайт КП "Водоканал"
+                        &raquo;</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-center">Концерн "Міські Теплові Мережі"</h5>
+
+                <p class="text-center"><?= BaseHtml::img("/img/hotvoda.png", ['style' => 'height: 64px']) ?></p>
+
+                <p class="text-center"><a class="btn btn-danger" href="http://teploseti.zp.ua/" target="_blank">Сайт Концерн "МТМ" </a></p>
             </div>
         </div>
 
